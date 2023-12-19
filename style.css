@@ -272,6 +272,14 @@ button:focus-visible {
   padding-left: 0.8rem;
 }
 
+.hero-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--typography-light);
