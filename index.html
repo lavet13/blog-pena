@@ -2,10 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="./public/favicon.jpg" />
+    <link rel="icon" type="image/jpeg" href="./favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб-сайт пены</title>
-    <link href="./public/style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="app">
@@ -15,12 +15,12 @@
         </div>
 
         <div>
-          <a href="./blogs/day-one/">Первый блог</a>
-          <a href="./blogs/day-two/">Второй блог</a>
+          <a title="Начало блоггерства" href="/blogs/day-one/">Первый блог</a>
+          <a href="/blogs/day-two/">Второй блог</a>
         </div>
       </nav>
 
-      <h3 class="secondary-heading mb-md" align="left">
+      <h3 class="secondary-heading mb-md">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -76,10 +76,7 @@
 
       <br />
 
-      <p
-        style="justify-content: center; font-weight: 600"
-        class="mb-md secondary-heading"
-      >
+      <p class="mb-md secondary-heading">
         Добро пожаловать в мой блог!
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +96,11 @@
         </svg>
       </p>
 
-      <img class="hero-image mb-md" src="./pic_bogdan.png" />
+      <img
+        class="hero-image mb-md"
+        src="./pic_bogdan.png"
+        alt="Арт пены, Дениса то есть"
+      />
 
       <div class="hash-tag-container">
         <!-- some kind of color -->
@@ -121,7 +122,7 @@
           </svg>
           ПенаБлок
         </div>
-        ,
+
         <div class="hash-tag-item">
           <svg
             xmlns="http://www.w3.org/2000/svg"
