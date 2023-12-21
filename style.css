@@ -285,7 +285,7 @@ h1 {
   border-color: rgba(255, 255, 255, 0.16);
   border-style: solid;
   border-width: 1px;
-  border-radius: 12px;
+  border-radius: 0.4rem;
   overflow-x: auto;
   padding: 0.75rem;
   margin: 1rem 0;
@@ -297,8 +297,17 @@ table {
   white-space: nowrap;
 }
 
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 hr {
-  margin: 5rem auto;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
   width: 100%;
   border: 1px solid var(--primary-color-2);
 }
@@ -439,10 +448,33 @@ button:focus-visible {
   }
 }
 
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.4rem;
+  color: var(--primary-color-1);
+  font-family: inherit;
+  padding: 1rem 0;
+}
+
 @media (max-width: 600px) {
   h3[class^='secondary-heading'] {
     justify-content: center;
     align-items: center;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    row-gap: 1rem;
   }
 
   .regular-image {
@@ -521,5 +553,13 @@ button:focus-visible {
 
   .hash-tag-item {
     background: var(--primary-color-hover-2);
+  }
+
+  pre {
+    border-radius: 0.4rem;
+    color: var(--primary-color-1);
+    font-family: inherit;
+    font-weight: 600;
+    padding: 1rem 0;
   }
 }
