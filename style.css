@@ -98,7 +98,10 @@ img {
   vertical-align: top;
 }
 a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  white-space: nowrap;
   color: inherit;
 }
 /* ----------------------------------------- */
@@ -156,6 +159,24 @@ a {
 }
 a:hover {
   color: var(--primary-color-hover-1);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+a[class^='nav--active']:hover {
+  color: var(--primary-color-1);
+  background: #1a1a1a;
+  outline: 2px solid var(--primary-color-2);
+}
+
+.link {
+  display: inline-block;
+  padding: 0;
+  border: none;
+}
+
+.link:hover {
+  background: transparent;
+  text-decoration: underline;
 }
 
 .primary-color-1 {
@@ -243,16 +264,12 @@ h1 {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-.nav--active:hover {
-  border-color: var(--primary-color-1);
+  transition: outline 0.05s ease-in;
 }
 
 .nav--active:focus,
 .nav--active:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 3px solid var(--primary-color-2);
 }
 
 .container {
@@ -262,6 +279,43 @@ h1 {
 
 .margin-between-horizontal p:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.table-container {
+  border-color: rgba(255, 255, 255, 0.16);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  overflow-x: auto;
+  padding: 0.75rem;
+  margin: 1rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+}
+
+table th {
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+table tr td {
+  text-align: center;
+}
+
+table td {
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.25rem;
 }
 
 .logo {
@@ -373,6 +427,10 @@ button:focus-visible {
   html {
     font-size: 55.5%;
   }
+
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -385,10 +443,15 @@ button:focus-visible {
     float: none;
     max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 1rem;
   }
 
   html {
     font-size: 52.5%;
+  }
+
+  h1 {
+    font-size: 3.3rem;
   }
 }
 
