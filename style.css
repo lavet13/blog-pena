@@ -297,6 +297,12 @@ table {
   white-space: nowrap;
 }
 
+hr {
+  margin: 5rem auto;
+  width: 100%;
+  border: 1px solid var(--primary-color-2);
+}
+
 table th {
   padding-inline-start: 1.5rem;
   padding-inline-end: 1.5rem;
@@ -459,6 +465,19 @@ button:focus-visible {
   :root {
     color: var(--typography-light);
     background-color: #ffffff;
+  }
+
+  a[class^='nav--active']:hover {
+    background: var(--primary-color-2);
+    color: white;
+  }
+
+  .table-container {
+    border-color: rgba(0, 0, 0, 0.16);
+  }
+
+  table th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   }
 
   a:hover {
