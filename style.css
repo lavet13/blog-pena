@@ -515,6 +515,10 @@ button:focus-visible {
     border-left: 3px solid var(--typography-dark);
   }
 
+  .blockquote-text span[class^='primary-color-1'] {
+    color: white;
+  }
+
   .hash-tag-item {
     background: var(--primary-color-hover-2);
   }
