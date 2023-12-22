@@ -272,11 +272,6 @@ h1 {
   outline: 3px solid var(--primary-color-2);
 }
 
-.container {
-  max-width: 65ch;
-  margin: 0 auto;
-}
-
 .margin-between-horizontal p:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -331,23 +326,6 @@ table td {
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 1.25rem;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em var(--primary-color-opacity-1));
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em var(--secondary-color-opacity-1));
-}
-
-.card {
-  padding: 2em;
 }
 
 button {
